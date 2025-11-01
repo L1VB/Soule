@@ -11,8 +11,11 @@
     --white: #f5f2ec;
     --white-y: #f4ebd6;
     --black: black;
-    --dark-red: #401719;
+    --dark-red: oklch(from var(--red) clamp(0, l - 0.22, 1) calc(c * 0.9)h);
+    /* --dark-red: #620b03; */
+    /* --dark-red: #74282c; */
     --red: #a40c13;
+    /* --orange: hsl(from var(--red) calc(h - 180) s l); */
     --orange: #f1ad4a;
 }
 
@@ -24,6 +27,9 @@ a{
 }
 button{
     cursor: pointer;
+    color: inherit;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 h1, h2, h3, h4, h5, p, button, a{
@@ -64,15 +70,21 @@ p{
 }
 button h4{
     font-family: "corundum-text-sc", serif;
-    font-weight: 300;
-    font-style: normal;
-    text-transform: capitalize;
-}
-button h4 b{
-    font-family: "corundum-text-sc", serif;
     font-weight: 400;
     font-style: normal;
     text-transform: capitalize;
+    color: inherit;
+}
+#highlight{
+    color: var(--dark-red) !important;
+    background-color: var(--white) !important;
+}
+#highlight:hover,
+details #highlight:hover{
+    background-color: var(--orange) !important;
+}
+details #highlight{
+    color: var(--red) !important;
 }
 
 /* content */
@@ -98,11 +110,6 @@ main section hr{
     border: 1px var(--dark-red) dashed;
     width: 80%;
     margin: 0 auto .5em;
-}
-
-button{
-    padding: 5px;
-    border-radius: 20px;
 }
 
 header{
@@ -159,9 +166,10 @@ details#menu section button{
     border: 1.5px var(--white) solid;
     text-transform: capitalize;
 }
+
 details#menu section button:hover{
     color: var(--red);
-    background-color: var(--orange);
+    background-color: var(--orange) !important;
 }
 @media only screen and (max-width: 600px) {
     details#menu summary{
