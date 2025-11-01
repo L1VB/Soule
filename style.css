@@ -192,10 +192,6 @@ iframe{
     height: 35dvw;
 }
 
-main section aside{
-    max-width: 95%;
-}
-
 main#links{
     display: flex;
     align-items: center;
@@ -233,8 +229,15 @@ section aside img{
     object-fit: cover;
 }
 img#example{
-    margin-left: 20px;
+    margin-left: 10px;
+    width: calc(40dvw - 10px);
+    object-fit: contain;
 }
+img#animation{
+    width: 100%;
+    height: auto;
+}
+
 aside a{
     position: relative;
 }
@@ -248,4 +251,13 @@ aside a p{
     border-left: none;
     width: 100%;
     text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 0 5em;
 }
