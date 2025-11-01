@@ -69,22 +69,23 @@ header{
 }
 main{
     padding: 1em 20px 2em;
-    border-top: 1px var(--dark-red) solid;
 }
 main:nth-child(even){
     background-color: var(--white-y);
 }
 section{
-    padding: 0;
+    padding: 1em 0 0;
     background-color: inherit;
 }
 section aside{
     padding: 1em 20px 1.5em;
-    border-bottom: 1px var(--dark-red) dashed;
     background-color: inherit;
 }
-aside:last-of-type{
-    border-bottom: none;
+
+main section hr{
+    border: 1px var(--dark-red) dashed;
+    width: 80%;
+    margin: 0 auto .5em;
 }
 
 button{
