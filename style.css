@@ -5,6 +5,9 @@
     color: var(--dark-red);
     background-color: var(--white);
     background-color: inherit;
+    font-family: "dolly-new", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 :root{
@@ -38,11 +41,6 @@ h1, h2, h3, h4, h5, p, button, a{
 }
 
 /* fonts */
-h1, h2, h3, h4, h5, p, button, a{
-    font-family: "dolly-new", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 i{
     font-family: "dolly-new", sans-serif;
     font-weight: 400;
@@ -64,9 +62,13 @@ h6{
     color: inherit;
 }
 
-p{
+p,
+ul{
     border-left: 1px var(--dark-red) solid;
     padding: 5px 10px;
+}
+ul{
+    padding: 0 25px;
 }
 button h4{
     font-family: "corundum-text-sc", serif;
