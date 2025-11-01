@@ -192,6 +192,10 @@ iframe{
     height: 35dvw;
 }
 
+main section aside{
+    max-width: 95%;
+}
+
 main#links{
     display: flex;
     align-items: center;
