@@ -155,6 +155,10 @@ main section aside iframe,
 main section aside img{
     padding: .5em 0;
 }
+iframe{
+    width: 60dvw;
+    height: 35dvw;
+}
 
 main#links{
     display: flex;
@@ -175,8 +179,8 @@ main#links button:hover{
 
 section aside img{
     width: auto;
-    max-width: 560px;
-    height: 315px;
+    max-width: 60dvw;
+    height: 35dvw;
     object-fit: cover;
 }
 img#example{
