@@ -150,6 +150,15 @@ details#menu section button:hover{
     color: var(--red);
     background-color: var(--orange);
 }
+@media only screen and (max-width: 600px) {
+    details#menu summary{
+        padding: 1em 1.1em;
+        border-radius: 50px;
+    }
+    details#menu section button{
+        padding: .5em .75em;
+    }
+}
 
 main section aside iframe,
 main section aside img{
