@@ -12,7 +12,7 @@
     --white-y: #f4ebd6;
     --black: black;
     --dark-red: #401719;
-    --red: #6d1419;
+    --red: #a40c13;
     --orange: #f1ad4a;
 }
 
@@ -21,6 +21,9 @@ h4{
 }
 a{
     text-decoration: none;
+}
+button{
+    cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, p, button, a{
@@ -38,16 +41,21 @@ i{
     font-family: "dolly-new", sans-serif;
     font-weight: 400;
     font-style: italic;
+    color: inherit;
 }
 b{
     font-family: "dolly-new", sans-serif;
     font-weight: 600;
     font-style: normal;
+    color: inherit;
 }
 h6{
-    font-family: "dolly-small-caps-new", sans-serif;
-    font-weight: 400;
+    font-family: "dolly-new", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
     font-style: normal;
+    text-transform: uppercase;
+    color: inherit;
 }
 
 p{
@@ -67,12 +75,12 @@ main:nth-child(even){
     background-color: var(--white-y);
 }
 section{
-    padding: 0 20px 0;
+    padding: 0;
     background-color: inherit;
 }
-aside{
-    padding: 1em 0 1.5em;
-    border-bottom: 1px var(--dark-red) solid;
+section aside{
+    padding: 1em 20px 1.5em;
+    border-bottom: 1px var(--dark-red) dashed;
     background-color: inherit;
 }
 aside:last-of-type{
@@ -99,21 +107,53 @@ header img{
     height: auto;
 }
 
-.top-button{
+
+details#menu{
+    color: var(--white) !important;
+}
+details#menu summary div{
+    color: var(--white) !important;
+}
+details#menu summary{
+    color: inherit;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--orange);
-    color: var(--white);
+    background-color: var(--red);
+    padding: .75em 1em;
     border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    z-index: 100;
+    cursor: pointer;
 }
-.top-button button{
-    border: none;
+details#menu section{
+    color: inherit;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--red);
+    padding: .5em .5em 50px;
+    border-radius: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .5em;
+}
+details#menu section button{
+    border: 1.5px var(--white) solid;
+    text-transform: capitalize;
+}
+details#menu section button:hover{
+    color: var(--red);
+    background-color: var(--orange);
+}
+
+main section aside iframe,
+main section aside img{
+    padding: .5em 0;
 }
 
 main#links{
