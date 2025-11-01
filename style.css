@@ -163,6 +163,7 @@ details#menu section{
     flex-direction: column;
     align-items: flex-end;
     gap: .5em;
+    z-index: 50;
 }
 details#menu section button{
     border: 1.5px var(--white) solid;
