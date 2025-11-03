@@ -265,6 +265,7 @@ aside a p{
 }
 .versions img:nth-child(even){
     background-color: var(--orange);
+    border: 2px var(--orange) solid;
 }
 
 footer{
