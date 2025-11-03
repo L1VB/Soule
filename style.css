@@ -187,6 +187,7 @@ details#menu section button:hover{
 main section aside iframe,
 main section aside img{
     padding: .5em 0;
+    max-width: 90%;
 }
 iframe{
     width: 60dvw;
