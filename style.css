@@ -255,6 +255,18 @@ aside a p{
     text-align: center;
 }
 
+.versions{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.versions img{
+    width: calc(50% - 10px) !important;
+}
+.versions img:nth-child(even){
+    background-color: var(--orange);
+}
+
 footer{
     display: flex;
     justify-content: space-between;
