@@ -259,7 +259,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: end;
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
     padding: 0 0 5em;
 }
