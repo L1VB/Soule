@@ -182,6 +182,18 @@ details#menu section button:hover{
     details#menu section button{
         padding: .5em .75em;
     }
+
+    .versions{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .versions img#animation{
+        width: 100% !important;
+    }
+    .versions img:nth-child(even){
+        background-color: var(--orange);
+    }
 }
 
 main section aside iframe,
@@ -265,7 +277,6 @@ aside a p{
 }
 .versions img:nth-child(even){
     background-color: var(--orange);
-    border: 2px var(--orange) solid;
 }
 
 footer{
