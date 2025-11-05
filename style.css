@@ -91,7 +91,7 @@ details #highlight{
 
 /* content */
 header{
-    padding: 1em 20px 3em;
+    padding: 1em 20px 2em;
 }
 main{
     padding: 1em 20px 2em;
@@ -294,4 +294,8 @@ footer{
     max-width: 85%;
     margin: 0 auto;
     padding: 0 0 5em;
+}
+
+main section h3:nth-child(2){
+    padding: .5em 0 0;
 }
