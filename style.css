@@ -271,10 +271,20 @@ section aside img{
     height: 35dvw;
     object-fit: cover;
 }
+main#Resources section aside img{
+    height: 45dvh;
+}
 img#example{
     margin-left: 10px;
     width: calc(40dvw - 10px);
     object-fit: contain;
+}
+img#example-2{
+    width: auto;
+    height: 20dvh;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
 }
 img#animation{
     width: 100%;
@@ -331,4 +341,11 @@ main section h3:nth-child(2){
 
 main section aside p{
     max-width: 60dvw;
+}
+
+ul li{
+    text-transform: capitalize;
+}
+ul#sec li{
+    text-transform: none;
 }
