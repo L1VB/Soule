@@ -339,10 +339,10 @@ img#example-2{
 }
 img#animation{
     width: auto;
-    max-width: 60dvw;
+    max-width: fit-content;
     height: 45dvh;
-    object-fit: cover;
-    object-position: left;
+    object-fit: contain;
+    object-position: center;
 }
 img#model{
     width: fit-content;
@@ -370,12 +370,13 @@ aside a p{
 .versions{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .versions img{
     width: calc(50% - 10px) !important;
 }
-.versions img:nth-child(even){
+.versions img:last-of-type{
     background-color: var(--orange);
 }
 
