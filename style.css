@@ -345,6 +345,14 @@ img#animation{
     object-fit: contain;
     object-position: center;
 }
+img#other{
+    width: 90dvw;
+    max-width: fit-content;
+    height: 45dvh;
+    max-height: fit-content;
+    object-fit: contain;
+    object-position: left;
+}
 img#label{
     width: 90dvw;
     height: 45dvh;
