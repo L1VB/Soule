@@ -62,6 +62,10 @@ h6{
     color: inherit;
 }
 
+.white{
+    color: var(--white);
+}
+
 p,
 ul{
     border-left: 1px var(--dark-red) solid;
@@ -114,6 +118,19 @@ main section hr{
     margin: 0 auto .5em;
 }
 
+main section details{
+    border-right: 2px var(--white) solid;
+    padding-right: .25em;
+}
+main section details:last-of-type{
+    border-right: none;
+}
+main section details,
+main section details summary{
+    display: flex;
+    align-items: center;
+}
+
 header{
     display: flex;
     align-items: end;
@@ -161,9 +178,12 @@ details#menu section{
     width: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    gap: .5em;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
     z-index: 50;
+    max-height: 30dvh;
+    flex-wrap: wrap;
 }
 details#menu section button{
     border: 1.5px var(--white) solid;
@@ -193,6 +213,10 @@ details#menu section button:hover{
     }
     .versions img:nth-child(even){
         background-color: var(--orange);
+    }
+
+    main section aside p{
+        max-width: 100dvw;
     }
 }
 
@@ -298,4 +322,34 @@ footer{
 
 main section h3:nth-child(2){
     padding: .5em 0 0;
+}
+
+/* nav */
+nav{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: #a40c13;
+    padding: 0;
+    margin: 0;
+}
+nav aside{
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    margin: 0;
+}
+nav aside details{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding: 0;
+    margin: 0;
+}
+
+main section aside p{
+    max-width: 60dvw;
 }
