@@ -74,6 +74,10 @@ ul{
 ul{
     padding: 0 29px;
 }
+ul#sec{
+    border-left: none;
+    padding: 0 20px;
+}
 button h4{
     font-family: "corundum-text-sc", serif;
     font-weight: 400;
