@@ -343,7 +343,7 @@ img#animation{
     height: 45dvh;
     max-height: fit-content;
     object-fit: contain;
-    object-position: center;
+    object-position: left;
 }
 img#other{
     width: 90dvw;
