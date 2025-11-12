@@ -233,6 +233,7 @@ iframe{
 main#links{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     padding: 1em 20px;
     background-color: var(--dark-red);
     color: var(--white);
@@ -322,32 +323,6 @@ footer{
 
 main section h3:nth-child(2){
     padding: .5em 0 0;
-}
-
-/* nav */
-nav{
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translate(-50%);
-    background-color: #a40c13;
-    padding: 0;
-    margin: 0;
-}
-nav aside{
-    text-align: right;
-    display: flex;
-    justify-content: right;
-    padding: 0;
-    margin: 0;
-}
-nav aside details{
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    padding: 0;
-    margin: 0;
 }
 
 main section aside p{
