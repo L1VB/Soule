@@ -390,7 +390,7 @@ footer{
     align-items: end;
     max-width: 85%;
     margin: 0 auto;
-    padding: 0 0 5em;
+    padding: 4em 0;
 }
 
 main section h3:nth-child(2){
