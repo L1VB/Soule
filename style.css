@@ -376,11 +376,8 @@ aside a p{
 .versions img{
     width: calc(50% - 10px) !important;
 }
+.versions video:last-of-type,
 .versions img:last-of-type{
-    background-color: var(--orange);
-}
-.versions video:last-of-type{
-    border: 5px var(--orange) solid;
     background-color: var(--orange);
 }
 
@@ -397,6 +394,7 @@ main section h3:nth-child(2){
     padding: .5em 0 0;
 }
 
+main section aside li,
 main section aside p{
     max-width: 60dvw;
 }
@@ -406,4 +404,8 @@ ul li{
 }
 ul#sec li{
     text-transform: none;
+}
+
+video{
+    padding: .5em 0;
 }
