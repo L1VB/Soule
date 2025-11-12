@@ -379,6 +379,10 @@ aside a p{
 .versions img:last-of-type{
     background-color: var(--orange);
 }
+.versions video:last-of-type{
+    border: 5px var(--orange) solid;
+    background-color: var(--orange);
+}
 
 footer{
     display: flex;
