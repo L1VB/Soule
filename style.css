@@ -276,7 +276,7 @@ main#Resources section aside img{
 }
 img#example{
     margin-left: 10px;
-    width: calc(40dvw - 10px);
+    width: calc(25dvw - 10px);
     object-fit: contain;
 }
 img#example-2{
@@ -294,9 +294,11 @@ img#animation{
     object-position: left;
 }
 img#model{
-    width: 100%;
+    width: fit-content;
     max-width: 54dvw !important;
     height: auto;
+    object-fit: contain;
+    object-position: left;
 }
 
 aside a{
