@@ -338,9 +338,17 @@ img#example-2{
     margin: 0;
 }
 img#animation{
-    width: auto;
+    width: 90dvw;
     max-width: fit-content;
     height: 45dvh;
+    max-height: fit-content;
+    object-fit: contain;
+    object-position: center;
+}
+img#label{
+    width: 90dvw;
+    height: 45dvh;
+    max-height: fit-content;
     object-fit: contain;
     object-position: center;
 }
@@ -408,4 +416,10 @@ ul#sec li{
 
 video{
     padding: .5em 0;
+    max-width: calc(100dvw - 60px);
+    max-height: fit-content;
+}
+
+img{
+    max-width: 100dvw !important;
 }
